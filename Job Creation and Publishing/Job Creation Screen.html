@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Creation | Smart Recruiting Platform</title>
+    <link rel="stylesheet" href="C:\Users\heman\Desktop\smart rec project\styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="job-creation-box">
+            <h2>Create a Job Posting</h2>
+            <form action="/save-job" method="POST">
+                <div class="textbox">
+                    <label for="job-title">Job Title</label>
+                    <input type="text" id="job-title" name="job-title" placeholder="Enter the job title" required>
+                </div>
+                <div class="dropdown">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select a department</option>
+                        <!-- Options populated from the Job Categories Management -->
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="job-location">Job Location</label>
+                    <select id="job-location" name="job-location" required>
+                        <option value="">Select a job location</option>
+                        <!-- Options populated from the Job Categories Management -->
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="employment-type">Employment Type</label>
+                    <select id="employment-type" name="employment-type" required>
+                        <option value="">Select employment type</option>
+                        <!-- Options populated from the Job Categories Management -->
+                    </select>
+                </div>
+                <div class="textarea">
+                    <label for="job-description">Job Description</label>
+                    <textarea id="job-description" name="job-description" placeholder="Enter the job description" required minlength="50"></textarea>
+                </div>
+                <div class="dropdown">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select a department</option>
+                        <option value="HR">HR</option>
+                        <option value="IT">IT</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Sales">Sales</option>
+                    </select>
+                </div>
+                <div class="textbox">
+                    <label for="job-location">Job Location</label>
+                    <input type="text" id="job-location" name="job-location" placeholder="Enter the job location" required>
+                </div>
+                <div class="dropdown">
+                    <label for="employment-type">Employment Type</label>
+                    <select id="employment-type" name="employment-type" required>
+                        <option value="">Select employment type</option>
+                        <option value="Full-time">Full-time</option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="Contract">Contract</option>
+                        <option value="Internship">Internship</option>
+                    </select>
+                </div>
+                <div class="salary-range">
+                    <label for="salary-range">Salary Range</label>
+                    <input type="number" id="salary-min" name="salary-min" placeholder="Min" required> -
+                    <input type="number" id="salary-max" name="salary-max" placeholder="Max" required>
+                </div>
+                <div class="textbox">
+                    <label for="application-deadline">Application Deadline</label>
+                    <input type="date" id="application-deadline" name="application-deadline" required>
+                </div>
+                <div class="textarea">
+                    <label for="required-qualifications">Required Qualifications</label>
+                    <textarea id="required-qualifications" name="required-qualifications" placeholder="Enter the required qualifications" required></textarea>
+                </div>
+                <div class="textarea">
+                    <label for="preferred-qualifications">Preferred Qualifications</label>
+                    <textarea id="preferred-qualifications" name="preferred-qualifications" placeholder="Enter the preferred qualifications"></textarea>
+                </div>
+                <div class="textarea">
+                    <label for="responsibilities">Responsibilities</label>
+                    <textarea id="responsibilities" name="responsibilities" placeholder="Enter the job responsibilities" required></textarea>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn-draft">Save as Draft</button>
+                    <button type="submit" class="btn-publish">Publish</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

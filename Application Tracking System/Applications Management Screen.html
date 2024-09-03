@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications Management | Smart Recruiting Platform</title>
+    <link rel="stylesheet" href="C:\Users\heman\Desktop\smart rec project\styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="applications-management-box">
+            <h2>Manage Applications</h2>
+            <div class="filters-section">
+                <div class="dropdown">
+                    <label for="job-title">Job Title</label>
+                    <select id="job-title" name="job-title">
+                        <option value="">Select job title</option>
+                        <!-- Options populated from job titles -->
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="status">Status</label>
+                    <select id="status" name="status">
+                        <option value="">Select status</option>
+                        <option value="Applied">Applied</option>
+                        <option value="In Review">In Review</option>
+                        <option value="Interview">Interview</option>
+                        <option value="Offered">Offered</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+                </div>
+                <div class="date-range-picker">
+                    <label for="date-range">Date Applied</label>
+                    <input type="text" id="date-range" name="date-range" placeholder="Select date range">
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Applicant Name</th>
+                        <th>Job Title</th>
+                        <th>Status</th>
+                        <th>Date Applied</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Data Analyst</td>
+                        <td>Interview</td>
+                        <td>2024-08-28</td>
+                        <td>
+                            <button class="btn-view">View</button>
+                            <button class="btn-next-stage">Move to Next Stage</button>
+                            <button class="btn-reject">Reject</button>
+                        </td>
+                    </tr>
+                    <!-- Additional applications can be listed here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

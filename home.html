@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Dashboard | Smart Recruiting Platform</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html">Recruitment Platform</a>
+        </div>
+        <div class="user-profile">
+            <img src="profile-pic.jpg" alt="User Profile Picture" class="profile-pic">
+            <div class="user-info">
+                <span class="user-name">John Doe</span>
+                <ul class="user-options">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="C:\Users\heman\Desktop\smart rec project\Real-time Dashboard for Recruitment Metrics\Dashboard Overview Screen.html">Dashboard</a></li>
+            <li><a href="C:\Users\heman\Desktop\smart rec project\Custom Reports Module\create-report.html">Custom Reports</a></li>
+            <li><a href="C:\Users\heman\Desktop\smart rec project\Interview Scheduling System\Interview Scheduling Dashboard.html">Interview Scheduling</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <form class="search-form">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <header class="home-header">
+        <div class="home-content">
+            <h1>Welcome to the Recruitment Platform</h1>
+            <p>Your one-stop solution for managing recruitment processes efficiently.</p>
+        </div>
+    </header>
+
+    <div class="container" id="dashboard-section">
+        <header>
+            <h1>Recruitment Dashboard</h1>
+            <div class="date-range-picker">
+                <label for="date-range">Date Range:</label>
+                <input type="text" id="date-range" placeholder="Select date range">
+                <button id="refresh-button">Refresh</button>
+            </div>
+        </header>
+
+        <section class="key-metrics">
+            <div class="metric-box">
+                <h3>Total Applications</h3>
+                <p>120</p>
+            </div>
+            <div class="metric-box">
+                <h3>Applications in Progress</h3>
+                <p>45</p>
+            </div>
+            <div class="metric-box">
+                <h3>Hired Candidates</h3>
+                <p>25</p>
+            </div>
+            <div class="metric-box">
+                <h3>Rejected Candidates</h3>
+                <p>30</p>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart-container">
+                <h3>Applications Over Time</h3>
+                <canvas id="applications-over-time-chart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Applications by Source</h3>
+                <canvas id="applications-by-source-chart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Applications by Status</h3>
+                <canvas id="applications-by-status-chart"></canvas>
+            </div>
+        </section>
+
+        <section class="detailed-metrics">
+            <h3>Detailed Metrics</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Applicant Name</th>
+                        <th>Position</th>
+                        <th>Source</th>
+                        <th>Date Applied</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>Software Engineer</td>
+                        <td>Job Board</td>
+                        <td>2024-08-25</td>
+                        <td>In Progress</td>
+                        <td><button class="btn-view-details">View Details</button></td>
+                    </tr>
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

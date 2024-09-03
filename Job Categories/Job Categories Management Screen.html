@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Categories Management | Smart Recruiting Platform</title>
+    <link rel="stylesheet" href="C:\Users\heman\Desktop\smart rec project\styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="job-categories-box">
+            <h2>Manage Job Categories</h2>
+            <form action="/add-category" method="POST">
+                <div class="dropdown">
+                    <label for="category-type">Category Type</label>
+                    <select id="category-type" name="category-type" required>
+                        <option value="">Select category type</option>
+                        <option value="Department">Department</option>
+                        <option value="Location">Location</option>
+                        <option value="Employment Type">Employment Type</option>
+                    </select>
+                </div>
+                <div class="textbox">
+                    <label for="category-name">Category Name</label>
+                    <input type="text" id="category-name" name="category-name" placeholder="Enter the category name" required>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="btn-add-category">Add Category</button>
+                </div>
+            </form>
+            <h3>Categories List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category Type</th>
+                        <th>Category Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Department</td>
+                        <td>IT</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- More categories can be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+/* Reset some basic styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Global Styles */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar-nav li a:hover {
+    color: #ffdd57;
+}
+
+/* User Profile Styles */
+.user-profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    color: white;
+    position: relative;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-options {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    color: #333;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.user-options li {
+    padding: 10px 20px;
+}
+
+.user-options li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.user-options li a:hover {
+    background-color: #f4f4f9;
+}
+
+.user-profile:hover .user-options {
+    display: block;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search-form button {
+    background-color: #ffdd57;
+    color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #ffcc33;
+}
+
+/* Header Styles */
+.home-header {
+    background-image: linear-gradient(to right, #007bff, #00c6ff);
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.home-header .home-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home-header .home-content p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Key Metrics Section */
+.key-metrics {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.metric-box {
+    flex: 1;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.metric-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.metric-box p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Charts Section */
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.chart-container {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Detailed Metrics Table */
+.detailed-metrics {
+    margin-top: 40px;
+}
+
+.detailed-metrics h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.detailed-metrics table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.detailed-metrics table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.detailed-metrics table th,
+.detailed-metrics table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.detailed-metrics table tr:hover {
+    background-color: #f4f4f9;
+}
+
+.btn-view-details {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-view-details:hover {
+    background-color: #0056b3;
+}
